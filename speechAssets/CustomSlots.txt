@@ -1,0 +1,27 @@
+type OPTION
+japanese
+italian
+pasta
+noodles
+sex
+sleep
+water
+beer
+chinese
+mexican
+orange juice
+coffee
+whiskey
+gin
+
+type VERB
+drink
+watch
+watch a
+eat
+eat a
+have
+have a
+listen to
+play
+play a

@@ -1,7 +1,25 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "MakeDecision",
+      "slots": [
+        {
+          "name": "VerbOne",
+          "type": "VERB"
+        },
+        {
+          "name": "VerbTwo",
+          "type": "VERB"
+        },
+        {
+          "name": "OptionOne",
+          "type": "OPTION"
+        },
+        {
+          "name": "OptionTwo",
+          "type": "OPTION"
+        }
+      ]
     }
   ]
 }

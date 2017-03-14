@@ -1,3 +1,10 @@
-HelloWorldIntent hello
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
+MakeDecision should I {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+MakeDecision should I {VerbOne} {OptionOne} or {OptionTwo}
+MakeDecision which should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+MakeDecision which should I do {VerbOne} {OptionOne} or {OptionTwo}
+MakeDecision which should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+MakeDecision which should we do {VerbOne} {OptionOne} or {OptionTwo}
+MakeDecision what should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+MakeDecision what should I do {VerbOne} {OptionOne} or {OptionTwo}
+MakeDecision what should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+MakeDecision what should we do {VerbOne} {OptionOne} or {OptionTwo}

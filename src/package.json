@@ -1,26 +1,27 @@
 {
-  "name": "skill-sample-nodejs-hello-world",
+  "name": "alexa-skill-make-decision",
   "version": "1.0.0",
-  "description": "Hello world sample skill",
+  "description": "Alexa skill to make a decision based on user's choices.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexa/skill-sample-nodejs-hello-world.git"
+    "url": "git+https://github.com/cgsimmons/alexa-skill-make-decision.git"
   },
   "keywords": [
-    "helloworld",
+    "make",
+    "decision",
     "alexa",
     "skill"
   ],
   "author": "Amazon.com",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/alexa/skill-sample-nodejs-hello-world/issues"
+    "url": "https://github.com/cgsimmons/alexa-skill-make-decision/issues"
   },
-  "homepage": "https://github.com/alexa/skill-sample-nodejs-hello-world#readme",
+  "homepage": "https://github.com/cgsimmons/alexa-skill-make-decision",
   "dependencies": {
     "alexa-sdk": "^1.0.0"
   }
