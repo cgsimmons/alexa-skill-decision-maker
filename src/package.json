@@ -1,5 +1,5 @@
 {
-  "name": "alexa-skill-make-decision",
+  "name": "alexa-skill-choice-maker",
   "version": "1.0.0",
   "description": "Alexa skill to make a decision based on user's choices.",
   "main": "index.js",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/cgsimmons/alexa-skill-make-decision/issues"
   },
-  "homepage": "https://github.com/cgsimmons/alexa-skill-make-decision",
+  "homepage": "https://github.com/cgsimmons/alexa-skill-choice-maker",
   "dependencies": {
     "alexa-sdk": "^1.0.0"
   }
