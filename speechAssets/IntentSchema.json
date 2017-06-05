@@ -1,7 +1,6 @@
 {
   "intents": [
     {
-      "intent": "MakeDecision",
       "slots": [
         {
           "name": "VerbOne",
@@ -18,8 +17,13 @@
         {
           "name": "OptionTwo",
           "type": "OPTION"
+        },
+        {
+          "name": "Reason",
+          "type": "REASON"
         }
-      ]
+      ],
+      "intent": "ChoiceMaker"
     }
   ]
 }
