@@ -1,27 +1,63 @@
 type OPTION
 japanese
+some japanese
 italian
+some italian
 pasta
+some pasta
 noodles
+some noodles
 sex
 sleep
+some sleep
 water
+a water
+some water
 beer
+a beer
+some beer
 chinese
+some chinese
 mexican
+some mexican
 orange juice
+some orange juice
+an orange juice
 coffee
+a coffee
+some coffee
 whiskey
+a whiskey
+some whiskey
 gin
+the piano
+science
+math
+social studies
+judo
+Rocky
+Planet of the Apes
+The Shawshank Redemption
+Dredd
+Peter Pan
+in
+out
 
 type VERB
 drink
 watch
-watch a
 eat
-eat a
 have
-have a
 listen to
 play
-play a
+practice
+study
+stay
+go
+dine
+
+type REASON
+for breakfast
+for lunch
+for dinner
+for brunch
