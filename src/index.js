@@ -15,19 +15,36 @@ const Alexa = require('alexa-sdk');
 const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
 
 const handlers = {
-    'MakeDecision': function () {
-
-        const verb1 = this.event.request.intent.slots.VerbOne.value;
+    'ChoiceMaker': function () {
+  
+        let verb1 = this.event.request.intent.slots.VerbOne.value;
+        if (verb1 == null) {
+            verb1 = 'do';
+        }
         const verb2 = this.event.request.intent.slots.VerbTwo.value;
         const verbs = [verb1, verb2];
         const option1 = this.event.request.intent.slots.OptionOne.value;
         const option2 = this.event.request.intent.slots.OptionTwo.value;
         const options = [option1, option2];
-
+        const reason = this.event.request.intent.slots.Reason.value;
+        
         //generate random number between 0 and 1
         const index = Math.floor(Math.random() * 2);
-
-        this.emit(':tell', 'You should ' + verbs[index] + ' ' + options[index]);
+        let message = "You should ";
+        const verb = verbs[index] == null ? verbs[0] : verbs[index];
+        const option = options[index];
+        
+        if (option == null) {
+            this.emit(':tell', 'Sorry, I did not understand your choices.');
+            return;
+        }
+        
+        message += verb + ' ' + option;
+       
+        if (reason != null) {
+            message += ' ' + reason;
+        }
+        this.emit(':tell', message);
     }
 };
 
