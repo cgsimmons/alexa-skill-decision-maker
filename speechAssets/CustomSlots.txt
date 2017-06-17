@@ -42,6 +42,10 @@ Dredd
 Peter Pan
 in
 out
+eat out
+go out
+dine in
+dine out
 
 type VERB
 drink
@@ -55,6 +59,7 @@ study
 stay
 go
 dine
+sleep
 
 type REASON
 for breakfast

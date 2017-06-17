@@ -1,22 +1,22 @@
-ChoiceMaker should I {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker should I {VerbOne} {OptionOne} or {OptionTwo}
-ChoiceMaker should I {VerbOne} {OptionOne} or {OptionTwo} {Reason}
-ChoiceMaker should I {VerbOne} {OptionOne} {Reason} or {OptionTwo}
-ChoiceMaker if I should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker if I should {VerbOne} {OptionOne} or {OptionTwo}
-ChoiceMaker if I should {VerbOne} {OptionOne} or {OptionTwo} {Reason}
-ChoiceMaker if I should {VerbOne} {OptionOne} {Reason} or {OptionTwo}
-ChoiceMaker what should I {VerbOne} {Reason} {OptionOne} or {OptionTwo}
-ChoiceMaker which should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker what should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker what I should {VerbOne} {Reason} {OptionOne} or {OptionTwo}
-ChoiceMaker should we {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker should we {VerbOne} {OptionOne} or {OptionTwo}
-ChoiceMaker should we {VerbOne} {OptionOne} or {OptionTwo} {Reason}
-ChoiceMaker if we should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker if we should {VerbOne} {OptionOne} or {OptionTwo}
-ChoiceMaker if we should {VerbOne} {OptionOne} or {OptionTwo} {Reason}
-ChoiceMaker what should we {VerbOne} {Reason} {OptionOne} or {OptionTwo}
-ChoiceMaker which should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker what should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
-ChoiceMaker what we should {VerbOne} {Reason} {OptionOne} or {OptionTwo}
+DecisionMaker should I {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker should I {VerbOne} {OptionOne} or {OptionTwo}
+DecisionMaker should I {VerbOne} {OptionOne} or {OptionTwo} {Reason}
+DecisionMaker should I {VerbOne} {OptionOne} {Reason} or {OptionTwo}
+DecisionMaker if I should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker if I should {VerbOne} {OptionOne} or {OptionTwo}
+DecisionMaker if I should {VerbOne} {OptionOne} or {OptionTwo} {Reason}
+DecisionMaker if I should {VerbOne} {OptionOne} {Reason} or {OptionTwo}
+DecisionMaker what should I {VerbOne} {Reason} {OptionOne} or {OptionTwo}
+DecisionMaker which should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker what should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker what I should {VerbOne} {Reason} {OptionOne} or {OptionTwo}
+DecisionMaker should we {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker should we {VerbOne} {OptionOne} or {OptionTwo}
+DecisionMaker should we {VerbOne} {OptionOne} or {OptionTwo} {Reason}
+DecisionMaker if we should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker if we should {VerbOne} {OptionOne} or {OptionTwo}
+DecisionMaker if we should {VerbOne} {OptionOne} or {OptionTwo} {Reason}
+DecisionMaker what should we {VerbOne} {Reason} {OptionOne} or {OptionTwo}
+DecisionMaker which should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker what should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}
+DecisionMaker what we should {VerbOne} {Reason} {OptionOne} or {OptionTwo}

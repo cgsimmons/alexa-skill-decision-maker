@@ -19,9 +19,9 @@
   "author": "Amazon.com",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cgsimmons/alexa-skill-make-decision/issues"
+    "url": "https://github.com/cgsimmons/alexa-skill-decision-maker/issues"
   },
-  "homepage": "https://github.com/cgsimmons/alexa-skill-choice-maker",
+  "homepage": "https://github.com/cgsimmons/alexa-skill-decision-maker",
   "dependencies": {
     "alexa-sdk": "^1.0.0"
   }
