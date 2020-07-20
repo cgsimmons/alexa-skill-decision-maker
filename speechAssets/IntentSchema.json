@@ -1,38 +1,426 @@
 {
-  "intents": [
-    {
-      "slots": [
-        {
-          "name": "VerbOne",
-          "type": "VERB"
-        },
-        {
-          "name": "VerbTwo",
-          "type": "VERB"
-        },
-        {
-          "name": "OptionOne",
-          "type": "OPTION"
-        },
-        {
-          "name": "OptionTwo",
-          "type": "OPTION"
-        },
-        {
-          "name": "Reason",
-          "type": "REASON"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "decision maker",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "DecisionMaker",
+                    "slots": [
+                        {
+                            "name": "VerbOne",
+                            "type": "VERB"
+                        },
+                        {
+                            "name": "VerbTwo",
+                            "type": "VERB"
+                        },
+                        {
+                            "name": "OptionOne",
+                            "type": "OPTION"
+                        },
+                        {
+                            "name": "OptionTwo",
+                            "type": "OPTION"
+                        },
+                        {
+                            "name": "Reason",
+                            "type": "REASON"
+                        }
+                    ],
+                    "samples": [
+                        "should I {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "should I {VerbOne} {OptionOne} or {OptionTwo}",
+                        "should I {VerbOne} {OptionOne} or {OptionTwo} {Reason}",
+                        "should I {VerbOne} {OptionOne} {Reason} or {OptionTwo}",
+                        "if I should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "if I should {VerbOne} {OptionOne} or {OptionTwo}",
+                        "if I should {VerbOne} {OptionOne} or {OptionTwo} {Reason}",
+                        "if I should {VerbOne} {OptionOne} {Reason} or {OptionTwo}",
+                        "what should I {VerbOne} {Reason} {OptionOne} or {OptionTwo}",
+                        "which should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "what should I do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "what I should {VerbOne} {Reason} {OptionOne} or {OptionTwo}",
+                        "should we {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "should we {VerbOne} {OptionOne} or {OptionTwo}",
+                        "should we {VerbOne} {OptionOne} or {OptionTwo} {Reason}",
+                        "if we should {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "if we should {VerbOne} {OptionOne} or {OptionTwo}",
+                        "if we should {VerbOne} {OptionOne} or {OptionTwo} {Reason}",
+                        "what should we {VerbOne} {Reason} {OptionOne} or {OptionTwo}",
+                        "which should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "what should we do {VerbOne} {OptionOne} or {VerbTwo} {OptionTwo}",
+                        "what we should {VerbOne} {Reason} {OptionOne} or {OptionTwo}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "what was that",
+                        "say that again",
+                        "repeat that",
+                        "can you say that again",
+                        "can you repeat that",
+                        "repeat"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "OPTION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "japanese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some japanese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "italian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some italian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pasta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some pasta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "noodles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some noodles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some sleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chinese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some chinese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mexican"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some mexican"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orange juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some orange juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "an orange juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "whiskey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a whiskey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "some whiskey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "the piano"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "math"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "social studies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "judo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rocky"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Planet of the Apes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Shawshank Redemption"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dredd"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Peter Pan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "in"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eat out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dine in"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dine out"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "VERB",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "watch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "have"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "listen to"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "play"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "practice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "study"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sleep"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "REASON",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "for breakfast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "for lunch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "for dinner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "for brunch"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ],
-      "intent": "DecisionMaker"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
     }
-  ]
 }

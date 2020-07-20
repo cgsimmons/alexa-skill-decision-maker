@@ -23,6 +23,7 @@ const ERROR_MESSAGE =
 const handlers = {
     LaunchRequest: function () {
         const message = WELCOME_MESSAGE + HELP_REPROMPT;
+        this.attributes.lastSpeech = message;
         this.response.cardRenderer(SKILL_NAME, message);
         this.response.speak(message).listen(HELP_REPROMPT);
         this.emit(":responseReady");
@@ -44,6 +45,7 @@ const handlers = {
 
         if (verb === "do" && !option.length) {
             const errorMessage = ERROR_MESSAGE + HELP_REPROMPT;
+            this.attributes.lastSpeech = errorMessage;
             this.response.cardRenderer(SKILL_NAME, errorMessage);
             this.response.speak(errorMessage).listen(HELP_REPROMPT);
         } else {
@@ -58,6 +60,7 @@ const handlers = {
     },
     "AMAZON.HelpIntent": function () {
         const message = HELP_MESSAGE + HELP_REPROMPT;
+        this.attributes.lastSpeech = message;
         this.response.cardRenderer(SKILL_NAME, message);
         this.response.speak(message).listen(HELP_REPROMPT);
         this.emit(":responseReady");
@@ -70,6 +73,16 @@ const handlers = {
     },
     "AMAZON.FallbackIntent": function () {
         const message = ERROR_MESSAGE + HELP_REPROMPT;
+        this.attributes.lastSpeech = message;
+        this.response.cardRenderer(SKILL_NAME, message);
+        this.response.speak(message).listen(HELP_REPROMPT);
+        this.emit(":responseReady");
+    },
+    "AMAZON.RepeatIntent": function () {
+        const message =
+            this.attributes && this.attributes.lastSpeech
+                ? this.attributes.lastSpeech
+                : ERROR_MESSAGE + HELP_REPROMPT;
         this.response.cardRenderer(SKILL_NAME, message);
         this.response.speak(message).listen(HELP_REPROMPT);
         this.emit(":responseReady");
